@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hawkeye"
+version = "0.1.0"
+description = "A modular open-source reconnaissance and OSINT toolkit for Linux."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Abbas Raza" }
+]
+dependencies = []
+
+[project.scripts]
+hawkeye = "hawkeye.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
